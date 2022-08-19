@@ -1,0 +1,7 @@
+insert table column
+
+tr>th{$#}+(td>input[type='checkbox' class='taip'])+(td>input[type='checkbox' class='ne'])+(td>input[type='checkbox'
+class='dalinai'])+(td>div[contenteditable="false"]{})
+
+tr*>th{$#}+(td>input[type='checkbox' class='taip'])+(td>input[type='checkbox' class='ne'])+(td>input[type='checkbox'
+class='dalinai'])+(td>div[contenteditable="false"]{})

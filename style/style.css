@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.header,
+.full-div,
+.checkbox{
+    padding: 0.4rem;
+}
+/* Header */
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header,
+main,
+footer {
+    width:126ch;
+    margin: 1.5rem;
+}
+.top-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+.top-header .medium > div{
+    display: inline-block;
+    width: 10ch;
+    font-size: 0.7rem;
+}
+.logo {
+    height: 3.2rem;
+}
+
+hr {
+    margin: 0;
+}
+
+.medium.header {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.small.header {
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-align: end;
+}
+
+/*  */
+
+/*  */
+.table.description {
+    border: 2px solid #222831;
+    width: calc(48ch + 78ch);
+}
+
+.table.description .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.table.description .header {
+    background-color: #eeeeee;
+    width: 48ch;
+    border: 1px solid #222831;
+}
+
+.table.description [contenteditable="true"] {
+    width: 78ch;
+}
+
+/*  */
+
+/*  */
+.rules {
+    width: 124ch;
+    text-align: start;
+    margin: 1rem;
+}
+
+/*  */
+
+/*  */
+.table.one {
+    border: 2px solid #222831;
+    width: calc(126ch);
+}
+.table.one .header{
+    border: 1px solid #222831;
+}
+.table.one .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.table.one .one {
+    background-color: #eeeeee;
+    width: 8ch;
+
+}
+
+.table.one .two {
+    background-color: #eeeeee;
+    width: 40ch;
+
+}
+
+.table.one .title {
+    width: calc(126ch - 8ch);
+
+    background-color: #eeeeee;
+}
+
+.table.one [contenteditable="true"] {
+    width: calc(126ch - 8ch - 40ch);
+}
+
+/*  */
+.table.heading {
+    width: 48ch;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.table.two {
+    border: 2px solid #222831;
+    width: 126ch;
+}
+.table.two .header{
+    border: 1px solid #222831;
+}
+
+
+.table.two .row {
+    display: flex;
+}
+
+.table.two .one {
+    width: 8ch;
+    
+    background-color: #eeeeee;
+}
+
+.table.two .two {
+    width: calc((126ch - 8ch)/2);
+    
+    background-color: #eeeeee;
+}
+
+.table.two .three {
+    width: calc((126ch - 8ch)/2);
+    
+    background-color: #eeeeee;
+}
+
+.table.two [contenteditable="true"] {
+    width: calc((126ch - 8ch)/2);
+}
+
+/*  */
+
+/*  */
+.table{
+    margin-bottom: 1.5rem;
+}
+
+.table.three [contenteditable="true"] {
+    width: 126ch;
+    border: 2px solid #222831;
+}
+
+/*  */
+
+/*  */
+.table.four {
+    border: 2px solid #222831;
+    width: 126ch;
+}
+
+.table.four .heading {
+    display: flex;
+}
+
+.table.four .heading .one {
+    width: 58ch;
+}
+
+.table.four .heading .two,
+.table.four .heading .three,
+.table.four .heading .four {
+    width: 10ch;
+}
+
+.table.four .heading .five {
+    width: calc(126ch - 58ch - (3* 10ch));
+}
+
+.table.four .row {
+    display: flex;
+    flex-direction: row;
+}
+
+.table.four .header {
+    width: 58ch;
+    border: 1px solid #222831;
+}
+.checkbox-group{
+    display: flex;
+}
+.table.four .checkbox {
+    border: 1px solid #222831;
+    width: 10ch;
+}
+
+.table.four [contenteditable] {
+    width: calc(126ch - 58ch - (3 * 10ch));
+    border: 1px solid #222831;
+}
+
+.table.four .full-div{
+    width: calc(126ch - 58ch);
+    border: 1px solid #222831;
+}
+
+/*  */
+
+div [contenteditable="true"] {
+    background-color: #9efcb4;
+    border: 1px solid #222831;
+    padding: 0.1rem 0.2rem;
+}
+
+div [contenteditable="true"]:empty {
+    background-color: #ff5722;
+    border: 1px solid #222831;
+    padding: 0.1rem 0.2rem;
+}
+
+div [contenteditable="false"] {
+    background-color: #2d4059;
+    border: 1px solid #222831;
+    padding: 0.1rem 0.2rem;
+}
+/*  */
+
+/*  */
+.table.six{
+    border: 2px solid #222831;
+    width: 126ch;
+}
+.table.six .row{
+    display: flex;
+    flex-direction: row;
+}
+.table.six .one{
+    width: 8ch;
+    border: 1px solid #222831;
+}
+.table.six .two{
+    width: calc(126ch - 8ch);
+    border: 1px solid #222831;
+}
+/*  */
+
+/*  */
+.company-owner,
+.expert-leader,
+.expert-assistant{
+    display: flex;
+    width: 126ch;
+    justify-content: space-between;
+    margin: 1.2rem 0;
+}
+.expert-leader .group{
+    display: flex;
+    flex-direction: column;
+}
+.expert-leader .medium > div{
+    display: inline-block;
+    width: 10ch;
+    font-size: 0.7rem;
+}
+.expert-leader >[contenteditable],
+.expert-assistant >[contenteditable]{
+    width: 32ch;
+}
+footer{
+    padding-bottom:1.4rem ;
+}
+/*  */
+
+[type="checkbox"]{
+    height: 2rem;
+    width: 2rem;
+}
+@media print {
+    .no-print{
+      display:none;
+    }
+  }
+
+/* Main */
